@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="./css/styles.css" type = "text/css" rel="stylesheet">
+    <link href="./css/tranzitie.css" type = "text/css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body id="page">
+    <div class="transition transition-1 is-active"></div>
+    <div>
+        <video class="film" autoplay loop muted >
+            <source src="./videos/background_movie_2.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <ul class="banner">
+        <li class="banner"><a class="banner" href="./index.html"> Acasa </a></li>
+
+        <li class="banner"><a class="banner_pagina_curenta" href="./evaluare.html"> Evaluare </a></li>
+
+        <li class="banner"><a class="banner" href="./rezultate.html"> Rezultate </a></li>
+    </ul>
+
+    <div class="continut_pagina_evaluare">
+        <div>
+            <button id="buton_PAM" class="buton_PAM"> Primul <br> ajutor <br> medical </button>
+        </div>     
+    </div>
+    
+    <!-- MODAL PAM -->
+    <div class="bg-modal">
+        <div class="modal-content">
+            <img src="./images/profilPAM.jpg" />
+            <div class="close">+</div>
+            <form id="formularPAM">
+                <input id="parolaEvaluatorPAM" type="password" placeholder = "Parola evaluator = 1234" autocomplete="off">
+                <input id="numeCursantPAM" type="text" placeholder = "Nume si prenume" autocomplete="off"/>
+                <input id="gradCursantPAM" type="text" placeholder = "Grad" autocomplete="off"/>
+                <a id="butonContinuaPAM" class="pop-up-button_PAM" href="./evaluarePAM.html"> Continua </a>
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/informatiiPAM.js"></script>
+    <script src="./js/tranzitie.js"></script>
+</body>

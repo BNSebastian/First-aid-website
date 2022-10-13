@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<link href="./css/styles.css" type = "text/css" rel="stylesheet">
+<link href="./css/tranzitie.css" type = "text/css" rel="stylesheet">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body id="page">
+    <div class="transition transition-1 is-active"></div>
+
+    <div>
+        <video class="film" autoplay loop muted >
+            <source src="./videos/background_movie_3.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <ul class="banner">
+        <li class="banner"> <a class="banner" href="./index.html"> Acasa </a> </li>
+
+        <li class="banner"> <a class="banner_pagina_curenta" href="./evaluare.html"> Evaluare </a> </li>
+
+        <li class="banner"><a class="banner" href="./rezultate.html"> Rezultate </a></li>
+    </ul>
+
+    <div class="continut_pagina">
+        <p id="rezultatePrompt"> Rezultatele evaluarii vor fi afisate aici </p> 
+        <table>
+            <thead>
+                <th> Pentru a salva rezultatele pe MongoDB, folosiți butonul de mai jos: </th>
+                <th> Pentru a printa rezultatele, puteti folosi butonul de mai jos: </th>
+            </thead>
+            <tbody>
+                <tr> 
+                    <td><button class='buton_mongodb' onclick="sendDATA()"></button></td>
+                    <td><button class='buton_print' onclick="printRezultate('rezultateComplete')"></button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="continut_pagina hidden">
+        <div id="end" class="flex-center flex-column">
+            <h4 id="rezultateComplete"> </h4>
+        </div>     
+    </div> 
+   
+    <script src="./js/rezultatePAM.js"></script>
+    <script src="./js/tranzitie.js"></script>
+</body>
